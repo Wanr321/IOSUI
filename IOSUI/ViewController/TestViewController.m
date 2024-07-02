@@ -22,6 +22,7 @@
 
     UILabel *uiLabel = [[UILabel alloc] init];
     uiLabel.text = [NSString stringWithFormat:@"你好, %@", self.receivedData]; //使用创建子视图的参数
+    uiLabel.textColor = [UIColor blueColor];
     [self.view addSubview:uiLabel];
     
     [uiLabel mas_makeConstraints:^(MASConstraintMaker *make){
