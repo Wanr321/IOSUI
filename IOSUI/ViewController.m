@@ -7,13 +7,15 @@
 
 #import "ViewController.h"
 #import "ViewController/SecondViewController.h"
+#import "ViewController/TestViewController.h"
 
 #import "MyUnity/ImageTools.h"
 
 // 类扩展，一种匿名的类别 @interface Person()
-@interface ViewController () <UITextFieldDelegate, UITextViewDelegate, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
-@property  UIScrollView *scrollView;
+@interface ViewController () <UITextFieldDelegate, UITextViewDelegate, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate, TestViewControllerDelegate>
+@property UIScrollView *scrollView;
 @property UIButton *navigateButton; //导航按钮
+@property UIButton *testNavigateButton; //导航按钮
 @property UITextField *uiTextField;
 @property UIImageView *imageView;
 @property NSString *currentImageName;
@@ -23,24 +25,35 @@
 @property NSArray *imageNamesArray;
 
 @property SecondViewController *secondVC;
+@property (strong)TestViewController *testVC;
 @end
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
 #pragma mark 页面滚动
     self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+    self.scrollView.contentSize = CGSizeMake(self.view.bounds.size.width, 3 * self.view.bounds.size.height);
+#pragma mark TODO 再给添加一个content view
     [self.view addSubview:self.scrollView];
-    self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.bounds), 3 * CGRectGetHeight(self.view.bounds));
-    
+
 #pragma mark 导航按钮
     self.navigateButton = [UIButton buttonWithType:UIButtonTypeSystem];
     self.navigateButton.frame = CGRectMake(10, 30, 200, 50);
     [self.navigateButton setTitle:@"下一页" forState:UIControlStateNormal];
     [self.navigateButton addTarget:self action:@selector(navigateButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     [self.scrollView addSubview:self.navigateButton];
+    
+    self.testNavigateButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    self.testNavigateButton.frame = CGRectMake(200, 30, 200, 50);
+    [self.testNavigateButton setTitle:@"测试页" forState:UIControlStateNormal];
+    [self.testNavigateButton addTarget:self action:@selector(testNavigateButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+    [self.scrollView addSubview:self.testNavigateButton];
     
 #pragma mark 标签
     UILabel *uiLable = [[UILabel alloc] initWithFrame:CGRectMake(50, 100, 300, 100)];
@@ -131,6 +144,27 @@
     self.secondVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
     NSLog(@"导航至第二页");
     [self presentViewController:self.secondVC animated:YES completion:^{}];
+    
+}
+
+- (void)testNavigateButtonTapped{
+    NSLog(@"先创建还是先销毁");
+    self.testVC = [[TestViewController alloc] init];
+    self.testVC.receivedData = @"主动设置参数";
+    
+    // 委托传参，设置被
+    self.testVC.delegate = self;
+    
+    NSLog(@"导航至测试页");
+    // 这里要先在 Appdelegate 添加 UINavigationController
+    NSLog(@"注意一下 nav controller 的对象是不是空了，动态语言就是这点麻烦%@", [self navigationController]);
+    [self.navigationController pushViewController:self.testVC animated:YES];
+}
+
+- (void)didReceiveData:(NSString *)data {
+    // 首先导入委托的协议，然后设置实例委托的对象为自己，在实现方法里就可以设置这些东西了
+    NSLog(@"得到了 %@", data);
+    self.uiTextField.text = data;
 }
 
 #pragma mark 按钮事件
@@ -149,6 +183,7 @@
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
     [self presentViewController:alert animated:YES completion:nil];
 }
+
 // 输入完毕返回事件，跟 delegate = self 有关
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder]; // 收起键盘

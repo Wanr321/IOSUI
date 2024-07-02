@@ -12,16 +12,17 @@
 		8D0AC9432C2D3FE9009BE89D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AC9422C2D3FE9009BE89D /* SecondViewController.m */; };
 		8D8A31412C2E98DA00ED75C2 /* ImageTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A31402C2E98DA00ED75C2 /* ImageTools.m */; };
 		8D8A31452C2E9DFE00ED75C2 /* BannerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A31442C2E9DFE00ED75C2 /* BannerCollectionViewCell.m */; };
+		8D8FB0FE2C32802F00D3489F /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8FB0FD2C32802F00D3489F /* TestViewController.m */; };
 		8DBAF4352C2BA4C6001C8797 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAF4342C2BA4C6001C8797 /* AppDelegate.m */; };
 		8DBAF4382C2BA4C6001C8797 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAF4372C2BA4C6001C8797 /* SceneDelegate.m */; };
 		8DBAF43B2C2BA4C6001C8797 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAF43A2C2BA4C6001C8797 /* ViewController.m */; };
-		8DBAF43E2C2BA4C6001C8797 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8DBAF43D2C2BA4C6001C8797 /* Base */; };
 		8DBAF4402C2BA4C7001C8797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DBAF43F2C2BA4C7001C8797 /* Assets.xcassets */; };
 		8DBAF4432C2BA4C7001C8797 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8DBAF4422C2BA4C7001C8797 /* Base */; };
 		8DBAF4462C2BA4C7001C8797 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAF4452C2BA4C7001C8797 /* main.m */; };
 		8DBAF4502C2BA4C7001C8797 /* IOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAF44F2C2BA4C7001C8797 /* IOSUITests.m */; };
 		8DBAF45A2C2BA4C7001C8797 /* IOSUIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAF4592C2BA4C7001C8797 /* IOSUIUITests.m */; };
 		8DBAF45C2C2BA4C7001C8797 /* IOSUIUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAF45B2C2BA4C7001C8797 /* IOSUIUITestsLaunchTests.m */; };
+		8DC927F72C33E06700A9828C /* PopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC927F62C33E06700A9828C /* PopupView.m */; };
 		8DF686662C2D4F00003294B5 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF686652C2D4F00003294B5 /* BannerView.m */; };
 		CFC4197CAF68586299C9C49D /* Pods_IOSUI_IOSUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5E954EF24CFA63132CFE8C /* Pods_IOSUI_IOSUIUITests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,8 @@
 		8D8A31422C2E99E200ED75C2 /* ImageTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTools.h; sourceTree = "<group>"; };
 		8D8A31432C2E9DFE00ED75C2 /* BannerCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerCollectionViewCell.h; sourceTree = "<group>"; };
 		8D8A31442C2E9DFE00ED75C2 /* BannerCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerCollectionViewCell.m; sourceTree = "<group>"; };
+		8D8FB0FC2C32802F00D3489F /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		8D8FB0FD2C32802F00D3489F /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		8DBAF4302C2BA4C6001C8797 /* IOSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DBAF4332C2BA4C6001C8797 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8DBAF4342C2BA4C6001C8797 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,7 +64,6 @@
 		8DBAF4372C2BA4C6001C8797 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		8DBAF4392C2BA4C6001C8797 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8DBAF43A2C2BA4C6001C8797 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8DBAF43D2C2BA4C6001C8797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DBAF43F2C2BA4C7001C8797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DBAF4422C2BA4C7001C8797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DBAF4442C2BA4C7001C8797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +73,8 @@
 		8DBAF4552C2BA4C7001C8797 /* IOSUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DBAF4592C2BA4C7001C8797 /* IOSUIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSUIUITests.m; sourceTree = "<group>"; };
 		8DBAF45B2C2BA4C7001C8797 /* IOSUIUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSUIUITestsLaunchTests.m; sourceTree = "<group>"; };
+		8DC927F52C33E06700A9828C /* PopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopupView.h; sourceTree = "<group>"; };
+		8DC927F62C33E06700A9828C /* PopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopupView.m; sourceTree = "<group>"; };
 		8DF686652C2D4F00003294B5 /* BannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerView.m; sourceTree = "<group>"; };
 		8DF686672C2D50D6003294B5 /* BannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerView.h; sourceTree = "<group>"; };
 		A23C7D579084A6DB203A5A32 /* Pods-IOSUI-IOSUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSUI-IOSUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-IOSUI-IOSUIUITests/Pods-IOSUI-IOSUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				8DF686652C2D4F00003294B5 /* BannerView.m */,
 				8D8A31432C2E9DFE00ED75C2 /* BannerCollectionViewCell.h */,
 				8D8A31442C2E9DFE00ED75C2 /* BannerCollectionViewCell.m */,
+				8DC927F52C33E06700A9828C /* PopupView.h */,
+				8DC927F62C33E06700A9828C /* PopupView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,6 +130,8 @@
 			children = (
 				8D0AC9412C2D3FB8009BE89D /* SecondViewController.h */,
 				8D0AC9422C2D3FE9009BE89D /* SecondViewController.m */,
+				8D8FB0FC2C32802F00D3489F /* TestViewController.h */,
+				8D8FB0FD2C32802F00D3489F /* TestViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -171,7 +179,6 @@
 				8DBAF4372C2BA4C6001C8797 /* SceneDelegate.m */,
 				8DBAF4392C2BA4C6001C8797 /* ViewController.h */,
 				8DBAF43A2C2BA4C6001C8797 /* ViewController.m */,
-				8DBAF43C2C2BA4C6001C8797 /* Main.storyboard */,
 				8DBAF43F2C2BA4C7001C8797 /* Assets.xcassets */,
 				8DBAF4412C2BA4C7001C8797 /* LaunchScreen.storyboard */,
 				8DBAF4442C2BA4C7001C8797 /* Info.plist */,
@@ -330,7 +337,6 @@
 			files = (
 				8DBAF4402C2BA4C7001C8797 /* Assets.xcassets in Resources */,
 				8DBAF4432C2BA4C7001C8797 /* Base in Resources */,
-				8DBAF43E2C2BA4C6001C8797 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,8 +470,10 @@
 				8DBAF43B2C2BA4C6001C8797 /* ViewController.m in Sources */,
 				8DF686662C2D4F00003294B5 /* BannerView.m in Sources */,
 				8DBAF4352C2BA4C6001C8797 /* AppDelegate.m in Sources */,
+				8D8FB0FE2C32802F00D3489F /* TestViewController.m in Sources */,
 				8DBAF4462C2BA4C7001C8797 /* main.m in Sources */,
 				8DBAF4382C2BA4C6001C8797 /* SceneDelegate.m in Sources */,
+				8DC927F72C33E06700A9828C /* PopupView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,14 +510,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8DBAF43C2C2BA4C6001C8797 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8DBAF43D2C2BA4C6001C8797 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8DBAF4412C2BA4C7001C8797 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -651,7 +651,7 @@
 				INFOPLIST_FILE = IOSUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
@@ -681,7 +681,7 @@
 				INFOPLIST_FILE = IOSUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
